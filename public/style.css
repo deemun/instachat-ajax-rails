@@ -1,0 +1,48 @@
+@font-face {
+font-family: 'Billabong';
+font-style: normal;
+font-weight: normal;
+src: local('Billabong'), url('Billabong.woff') format('woff');
+}
+
+body {
+background: linear-gradient(236deg, #c6511a, #3586d5, #7dd535);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 40s ease infinite;
+-moz-animation: AnimationName 40s ease infinite;
+animation: AnimationName 40s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+
+.title1 {
+	font-family: 'Billabong';
+	font-size: 40px;
+}
+
+h1 {
+	font-family: 'Billabong';
+}
+
+.panel {
+	background-color: #EE6E73;
+}
+
+#people {
+	font-family: 'Billabong';
+	font-size: 30px;
+}
