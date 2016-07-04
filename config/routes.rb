@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   
 
-  get 'posts',  to: 'posts#index'
+  # get 'messageboards',  to: 'messageboards#index'
+  post '/messageboards',  to:  'messageboards#create'
 
    
   # The priority is based upon order of creation: first created -> highest priority.

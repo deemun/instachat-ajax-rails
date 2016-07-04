@@ -21,13 +21,22 @@ skip_before_action :verify_authenticity_token
   # end
 
    def create
-        @messageboard = Messageboard.new(messageboard_params)
+     
+        
+        @messageboard = Messageboard.new(title:params[:title],author:params[:author],text:params[:text])
+        
+        
 
+        
+        
         if @messageboard.save
-          render json: {}.to_json
+          render json: @messageboard.to_json
+          
         else
           render json: @messageboard.errors.to_json, status: 422
+           
         end
+        
    end
 
 
@@ -40,8 +49,8 @@ skip_before_action :verify_authenticity_token
    
 
 
-    private 
-    def messageboard_params   #must define messageboards params in strong params method under private. 
-    	params.require(:messageboard).permit(:title, :author, :text)
-    end
+    # private 
+    # def messageboard_params   #must define messageboards params in strong params method under private. 
+    # 	params.require(:messageboard).permit(:title, :author, :text)
+    # end
 end

@@ -8,11 +8,11 @@
  
 </head>
 <body id="background">
-<div class="navbar-fixed">
-    <nav>
+<div class="navbar-fixed indigo lighten-2">
+    <nav id=navcolor>
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo center title1">Instachat</a>
-        <ul class="right hide-on-med-and-down">
+        <ul class="left hide-on-med-and-down">
           <li class="active"><a href="collapsible.html">Welcome</a></li>
         </ul>
       </div>
@@ -21,10 +21,35 @@
 
 <div class="row">
 
-      <div class="col s1 panel">
+      <div class="col s2 panel">
         <!-- Grey navigation panel -->
         <p id="people"> Chat </p>
-<div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;" >
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="name" type="text" class="validate">
+          <label for="icon_prefix" style="color:white;">Name</label>
+          </div>
+          <div class="input-field col s12">
+          <i class="material-icons prefix">add_box</i>
+          <input id="hashtags" type="text" class="validate">
+          <label for="icon_prefix" style="color:white;">Hashtags</label>
+          </div>
+          <div class="input-field col s12">
+          <i class="material-icons prefix">chat_bubble</i>
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="textarea1" style="color:white;">Message</label>
+          <button id="post123" type="submit" class="waves-effect waves-light btn-large blue"><i class="material-icons right">send</i>Post</button>
+          <br>
+          <br>
+          <br>
+          <div class="progress">
+          <div class="indeterminate"></div>
+          </div>
+          <p style="text-align:center; font-family:billabong; font-size:20px;"> Connected </p>
+          </div>
+        </div>
+
+<div class="fixed-action-btn horizontal" style="top: 100px; right: 100px;" >
     <a class="btn-floating btn-large blue">
       <i class="large material-icons">mode_edit</i>
     </a>
@@ -36,9 +61,9 @@
       
     </ul>
   </div>
-      </div>
+    
 
-      <div class="col s11 posts">
+      <div class="col s2 posts">
         <!-- Teal page content  -->
        	 <!-- div ending for row -->
         
@@ -50,9 +75,6 @@
     </div>
     
 
-    <div class="container" id="container">
-    
-    </div>
 
         
 
